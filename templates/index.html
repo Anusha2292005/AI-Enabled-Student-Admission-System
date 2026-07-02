@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Admission System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h1>AI Enabled Student Admission System</h1>
+
+<form action="/predict" method="post">
+    <label>Academic Percentage:</label>
+    <input type="number" name="percentage" required>
+
+    <label>Entrance Exam Score:</label>
+    <input type="number" name="entrance_score" required>
+
+    <button type="submit">Check Eligibility</button>
+</form>
+
+</body>
+</html>
